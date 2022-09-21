@@ -1,9 +1,9 @@
 name: msix
 description: A command-line tool that create Msix installer from your flutter windows-build files.
-version: 3.6.3
+version: 3.6.4
 maintainer: Yehuda Kremer (yehudakremer@gmail.com)
 homepage: https://github.com/YehudaKremer/msix
-
+publish_to: none
 flutter:
   plugin:
     platforms:
@@ -12,22 +12,24 @@ flutter:
         pluginClass: none
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  args: ^2.3.0
-  yaml: ^3.1.0
-  path: ^1.8.0
-  package_config: ^2.0.2
+  args: ^2.3.1
+  yaml: ^3.1.1
+  path: ^1.8.2
+  package_config: ^2.1.0
   get_it: ^7.2.0
-  image: ^3.1.0
+  image: ^3.2.0
   cli_util: ^0.3.5
-  cli_dialog: ^0.5.0
-  pub_semver: ^2.1.0
+  cli_dialog:
+    git:
+      url: git@github.com:fabio21/cli_dialog.git
+  pub_semver: ^2.1.1
 
 dev_dependencies:
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   test: ^1.20.1
